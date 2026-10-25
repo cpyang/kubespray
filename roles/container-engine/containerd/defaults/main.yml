@@ -116,9 +116,9 @@ containerd_supported_distributions:
   - "Rocky"
   - "Amazon"
   - "Flatcar"
-  - "Flatcar Container Linux by Kinvolk"
   - "Suse"
   - "openSUSE Leap"
+  - "openSUSE MicroOS"
   - "openSUSE Tumbleweed"
   - "Kylin Linux Advanced Server"
   - "UnionTech"
@@ -131,7 +131,7 @@ enable_cdi: false
 # For containerd tracing configuration please check out the official documentation:
 # https://github.com/containerd/containerd/blob/main/docs/tracing.md
 containerd_tracing_enabled: false
-containerd_tracing_endpoint: "[::]:4317"
+containerd_tracing_endpoint: "https://localhost:4317"
 containerd_tracing_protocol: "grpc"
 containerd_tracing_sampling_ratio: 1.0
 containerd_tracing_service_name: "containerd"
